@@ -6,6 +6,8 @@ import 'Second.dart';
 
 void main(){
   runApp(MaterialApp(
+    theme: ThemeData(primarySwatch: Colors.green),
+    debugShowCheckedModeBanner: false,
     home: SplashScreen(),
   ));
 }
@@ -20,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> LoginScreen()));
     });
   }
