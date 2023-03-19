@@ -3,11 +3,8 @@ import 'dart:async';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:udecproject/ListDemo.dart';
-import 'package:udecproject/ListView_With_Builder.dart';
-import 'package:udecproject/List_Separator.dart';
-import 'package:udecproject/loginpage.dart';
-import 'Second.dart';
+import 'package:udecproject/snackdemo.dart';
+
 
 void main(){
   runApp(DevicePreview(
@@ -34,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Timer(Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context)=> List_Separator()));
+          MaterialPageRoute(builder: (context)=> SnackBarDemo()));
     });
   }
   @override
@@ -55,7 +52,8 @@ class _SplashScreenState extends State<SplashScreen> {
              image: DecorationImage(
                fit: BoxFit.fill,
                  image: AssetImage(
-             "assets/images/greentexture.png"))),
+             "assets/images/greentexture.png"))
+         ),
          child: Center(
            child: Column(
              mainAxisAlignment: MainAxisAlignment.center,
