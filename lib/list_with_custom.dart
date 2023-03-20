@@ -21,6 +21,13 @@ class List_custom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    return Scaffold(
+     appBar: AppBar(
+       title: const Text("List_Custom"),
+       leading: const Icon(Icons.arrow_back_ios_new_outlined),
+       actions: const [
+         Icon(Icons.shopping_cart),
+       ],
+     ),
      body: ListView.custom(
          // childrenDelegate: SliverChildListDelegate(
          //   ///creating list of card way - 1
