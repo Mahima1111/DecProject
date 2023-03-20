@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:udecproject/snackdemo.dart';
+import 'package:udecproject/list%20card%20sample.dart';
 
 
 void main(){
@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     Timer(Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context)=> SnackBarDemo()));
+          MaterialPageRoute(builder: (context)=> ListCard()));
     });
   }
   @override
